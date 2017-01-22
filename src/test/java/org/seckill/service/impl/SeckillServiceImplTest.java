@@ -1,7 +1,5 @@
 package org.seckill.service.impl;
 
-import java.util.List;
-
 import org.junit.Test;
 import org.seckill.BaseTest;
 import org.seckill.dto.Exposer;
@@ -13,6 +11,8 @@ import org.seckill.service.SeckillService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
 
 public class SeckillServiceImplTest extends BaseTest {
 
@@ -41,10 +41,10 @@ public class SeckillServiceImplTest extends BaseTest {
 		Exposer exposer = seckillService.exportSeckillUrl(id);
 		if (exposer.isExposed()) {
 			logger.info("exposer={}", exposer);
-			long phone = 13631231234L;
+			long phone = 13631231235L;
 			String md5 = exposer.getMd5();
 			try {
-				SeckillExecution execution = seckillService.executeSeckill(id, phone, md5);
+				SeckillExecution execution =  seckillService.executeSeckill(id, phone, md5);
 				logger.info("execution={}", execution);
 			} catch (RepeatKillException e) {
 				logger.error(e.getMessage());
