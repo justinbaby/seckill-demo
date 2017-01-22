@@ -16,9 +16,8 @@
 IDEA+Maven+SSM框架。  
  
 
-用maven对项目进行管理的知识很简单，关于创建maven项目的知识大家看我的这篇文章便可以在几分钟内掌握:[Maven安装配置及创建你的第一个Maven项目](http://codingxiaxw.cn/2016/11/24/51-first-maven-project/)  
-
-秒杀系统搭建环境:IDEA+Maven+SSM框架。详情讲解[请点击这里](http://codingxiaxw.cn/2016/11/27/53-maven-ssm-seckill-dao/)或是下面模块的链接前往我的博客观看。  
+用maven对项目进行管理的知识很简单，关于创建maven项目的知识大家可以去慕课网学习一下
+秒杀系统搭建环境:IDEA+Maven+SSM框架。详情讲解[请点击这里](http://codingxiaxw.cn/2016/11/27/53-maven-ssm-seckill-dao/)或是下面模块的链接前往我的博客观看。  
 
 完成这个秒杀系统，需要完成四个模块的代码编写，分别是:  
 
