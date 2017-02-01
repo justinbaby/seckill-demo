@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 成功秒杀实体
  * 
- * @author 李奕锋
+ * @author yan
  */
 public class SuccessKilled {
 

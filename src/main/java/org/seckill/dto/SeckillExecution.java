@@ -6,7 +6,7 @@ import org.seckill.enums.SeckillStateEnum;
 /**
  * 封装秒杀执行后结果
  * 
- * @author 李奕锋
+ * @author yan
  */
 public class SeckillExecution {
 

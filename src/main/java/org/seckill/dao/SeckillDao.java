@@ -1,16 +1,16 @@
 package org.seckill.dao;
 
+import org.apache.ibatis.annotations.Param;
+import org.seckill.entity.Seckill;
+
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.ibatis.annotations.Param;
-import org.seckill.entity.Seckill;
-
 /**
  * 秒杀库存DAO接口
  * 
- * @author 李奕锋
+ * @author yan
  */
 public interface SeckillDao {
 

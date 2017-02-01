@@ -3,7 +3,7 @@ package org.seckill.exception;
 /**
  * 秒杀关闭异常
  * 
- * @author 李奕锋
+ * @author yan
  */
 public class SeckillCloseException extends SeckillException {
 

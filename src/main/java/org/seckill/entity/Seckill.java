@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 秒杀库存实体
  * 
- * @author 李奕锋
+ * @author yan
  */
 public class Seckill {
 
