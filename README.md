@@ -13,11 +13,11 @@
 慕课网秒杀系统的视频教程重新总结了自己使用SSM开发项目的经历。  
 
 ## 开发环境
-IDEA+Maven+SSM框架。  
+IDEA+Maven+SSM+Redis
  
 
 用maven对项目进行管理的知识很简单，关于创建maven项目的知识大家可以去慕课网学习一下
-秒杀系统搭建环境:IDEA+Maven+SSM框架。
+秒杀系统搭建环境:IDEA+Maven+SSM+Redis。
 
 完成这个秒杀系统，需要完成四个模块的代码编写，分别是:  
 
