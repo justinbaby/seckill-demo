@@ -45,7 +45,7 @@ IDEA+Maven+SSM+Redis
 
 列表页:  
 
-![](http://od2xrf8gr.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-11-27%20%E4%B8%8B%E5%8D%883.24.50.png)  
+![](https://raw.githubusercontent.com/Aaron-zheng/SecKill/master/screenshot/1.png)  
 
 详情页:  
 
