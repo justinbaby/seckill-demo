@@ -17,7 +17,7 @@ import org.springframework.validation.BindingResult;
  */
 @Component
 @Aspect
-public class BindingResultAop {
+public class LogAOP {
 
     private final Logger LOG = LoggerFactory.getLogger(this.getClass());
 
