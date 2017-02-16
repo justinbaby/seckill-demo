@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.seckill.dao.SuccessKilledDao">
+<mapper namespace="com.imooc.dao.SuccessKilledDao">
 	<insert id="insertSuccessKilled">
 		<!-- 主键冲突，报错 -->
 		INSERT ignore INTO success_killed (seckill_id, user_phone, state)

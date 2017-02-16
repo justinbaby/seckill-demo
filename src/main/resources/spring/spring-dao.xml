@@ -35,7 +35,7 @@
 		<!-- 配置MyBaties全局配置文件:mybatis-config.xml -->
 		<property name="configLocation" value="classpath:mybatis-config.xml" />
 		<!-- 扫描entity包 使用别名 -->
-		<property name="typeAliasesPackage" value="org.seckill.entity" />
+		<property name="typeAliasesPackage" value="com.imooc.entity" />
 		<!-- 扫描sql配置文件:mapper需要的xml文件 -->
 		<property name="mapperLocations" value="classpath:mapper/*.xml" />
 	</bean>
@@ -45,11 +45,11 @@
 		<!-- 注入sqlSessionFactory -->
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 		<!-- 给出需要扫描Dao接口包 -->
-		<property name="basePackage" value="org.seckill.dao" />
+		<property name="basePackage" value="com.imooc.dao" />
 	</bean>
 
 	<!-- RedisDao -->
-	<bean id="redisDao" class="org.seckill.dao.cache.RedisDao">
+	<bean id="redisDao" class="com.imooc.dao.cache.RedisDao">
 		<constructor-arg index="0" value="localhost" />
 		<constructor-arg index="1" value="6379" />
 	</bean>
