@@ -9,6 +9,7 @@
 		<module>seckill-core</module>
 		<module>seckill-web</module>
 		<module>seckill-base</module>
+		<module>seckill-api</module>
 	</modules>
 	<name>seckill Maven Webapp</name>
 	<url>http://maven.apache.org</url>
