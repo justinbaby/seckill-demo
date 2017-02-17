@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - seckill@localhost" uuid="9e907825-c078-4301-af98-9d70c51a529b">
+    <database-info product="MySQL" version="5.5.38" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="seckill"/>
+      <table id="2" parent="1" name="seckill">
+        <comment>秒杀库存表</comment>
+      </table>
+      <table id="3" parent="1" name="success_killed">
+        <comment>秒杀成功明细表</comment>
+      </table>
+      <routine id="4" parent="1" name="execute_seckill">
+        <routine-kind>PROCEDURE</routine-kind>
+      </routine>
+      <column id="5" parent="2" name="seckill_id">
+        <comment>商品库存id</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="6" parent="2" name="name">
+        <comment>商品名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="7" parent="2" name="number">
+        <comment>库存数量</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="8" parent="2" name="start_time">
+        <comment>秒杀开启时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="9" parent="2" name="end_time">
+        <comment>秒杀结束时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="10" parent="2" name="create_time">
+        <comment>创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="11" parent="2" name="idx_create_time">
+        <columns>create_time</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="12" parent="2" name="idx_end_time">
+        <columns>end_time</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="13" parent="2" name="idx_start_time">
+        <columns>start_time</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="14" parent="2" name="PRIMARY">
+        <columns>seckill_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="15" parent="3" name="seckill_id">
+        <comment>秒杀商品id</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="16" parent="3" name="user_phone">
+        <comment>用户手机号</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="17" parent="3" name="state">
+        <comment>状态标示：-1指无效，0指成功，1指已付款</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="18" parent="3" name="create_time">
+        <comment>创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <index id="19" parent="3" name="idx_create_time">
+        <columns>create_time</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="20" parent="3" name="PRIMARY">
+        <columns>seckill_id
+user_phone</columns>
+        <primary>1</primary>
+      </key>
+      <argument id="21" parent="4" name="v_seckill_id">
+        <direction>IN</direction>
+        <data-type>bigint(20)</data-type>
+      </argument>
+      <argument id="22" parent="4" name="v_phone">
+        <direction>IN</direction>
+        <data-type>bigint(20)</data-type>
+      </argument>
+      <argument id="23" parent="4" name="v_kill_time">
+        <direction>IN</direction>
+        <data-type>timestamp</data-type>
+      </argument>
+      <argument id="24" parent="4" name="r_result">
+        <direction>OUT</direction>
+        <data-type>int(11)</data-type>
+      </argument>
+    </database-model>
+  </data-source>
+</component>

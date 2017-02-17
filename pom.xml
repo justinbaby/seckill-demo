@@ -3,8 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.imooc</groupId>
 	<artifactId>seckill</artifactId>
-	<packaging>war</packaging>
+	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
+	<modules>
+		<module>seckill-core</module>
+		<module>seckill-web</module>
+		<module>seckill-base</module>
+	</modules>
 	<name>seckill Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
