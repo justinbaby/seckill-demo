@@ -42,11 +42,11 @@ public class SeckillServiceImpl implements SeckillService {
 	private RedisDao redisDao;
 
 	// md5盐值字符串，用于混淆MD5
-	private final String slat = "skdfjksjdf7787%^%^%^FSKJFK*(&&%^%&^8DF8^%^^*7hFJDHFJ";
+	private final String slat = "sdfsgsfjks;sf,lasmglksmg";
 
 	@Override
 	public List<Seckill> getSeckillList() {
-		return seckillDao.queryAll(0, 4);
+		return seckillDao.queryAll(0, 6);
 	}
 
 	@Override
