@@ -26,12 +26,12 @@
 ## 安装部署
 
  #### 软件环境：
-  - IDEA
-  - MySQL
-  - JDK1.6或以上
-  - tomcat 8.0
-  - Redis
-  - Maven
+ - IDEA
+ - MySQL
+ - JDK1.6或以上
+ - tomcat 8.0
+ - Redis
+ - Maven
  #### 硬件环境(最小配置)：
 
   - CPU：1核
