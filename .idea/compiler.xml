@@ -29,11 +29,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="seckill" target="1.8" />
-      <module name="seckill-api" target="1.8" />
-      <module name="seckill-base" target="1.8" />
-      <module name="seckill-core" target="1.8" />
-      <module name="seckill-web" target="1.8" />
+      <module name="seckill" target="1.5" />
+      <module name="seckill-api" target="1.5" />
+      <module name="seckill-base" target="1.5" />
+      <module name="seckill-core" target="1.5" />
+      <module name="seckill-web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

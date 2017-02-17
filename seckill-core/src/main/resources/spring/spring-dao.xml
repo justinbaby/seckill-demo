@@ -10,23 +10,43 @@
 	<context:property-placeholder location="classpath:jdbc.properties" />
 
 	<!-- 2.数据库连接池 -->
-	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-		<!-- 配置连接池属性 -->
-		<property name="driverClass" value="${jdbc.driver}" />
-		<property name="jdbcUrl" value="${jdbc.url}" />
-		<property name="user" value="${jdbc.username}" />
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+		  init-method="init" destroy-method="clone">
+		<!-- 基本属性driverClassName、 url、user、password -->
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
 		<property name="password" value="${jdbc.password}" />
 
-		<!-- c3p0连接池的私有属性 -->
-		<property name="maxPoolSize" value="30" />
-		<property name="minPoolSize" value="10" />
-		<!-- 关闭连接后不自动commit -->
-		<property name="autoCommitOnClose" value="false" />
-		<!-- 获取连接超时时间 -->
-		<property name="checkoutTimeout" value="10000" />
-		<!-- 当获取连接失败重试次数 -->
-		<property name="acquireRetryAttempts" value="2" />
+		<!-- 配置初始化大小、最小、最大 -->
+		<!-- 通常来说，只需要修改initialSize、minIdle、maxActive -->
+		<!-- 初始化时建立物理连接的个数，缺省值为0 -->
+		<property name="initialSize" value="${jdbc.initialSize}" />
+		<!-- 最小连接池数量 -->
+		<property name="minIdle" value="${jdbc.minIdle}" />
+		<!-- 最大连接池数量，缺省值为8 -->
+		<property name="maxActive" value="${jdbc.maxActive}" />
+
+		<!-- 获取连接时最大等待时间，单位毫秒。配置了maxWait之后，缺省启用公平锁，并发效率会有所下降，如果需要可以通过配置useUnfairLock属性为true使用非公平锁。 -->
+		<property name="maxWait" value="${jdbc.maxWait}" />
 	</bean>
+	<!--<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">-->
+		<!--&lt;!&ndash; 配置连接池属性 &ndash;&gt;-->
+		<!--<property name="driverClass" value="${jdbc.driver}" />-->
+		<!--<property name="jdbcUrl" value="${jdbc.url}" />-->
+		<!--<property name="user" value="${jdbc.username}" />-->
+		<!--<property name="password" value="${jdbc.password}" />-->
+
+		<!--&lt;!&ndash; c3p0连接池的私有属性 &ndash;&gt;-->
+		<!--<property name="maxPoolSize" value="30" />-->
+		<!--<property name="minPoolSize" value="10" />-->
+		<!--&lt;!&ndash; 关闭连接后不自动commit &ndash;&gt;-->
+		<!--<property name="autoCommitOnClose" value="false" />-->
+		<!--&lt;!&ndash; 获取连接超时时间 &ndash;&gt;-->
+		<!--<property name="checkoutTimeout" value="10000" />-->
+		<!--&lt;!&ndash; 当获取连接失败重试次数 &ndash;&gt;-->
+		<!--<property name="acquireRetryAttempts" value="2" />-->
+	<!--</bean>-->
 
 	<!-- 3.配置SqlSessionFactory对象 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
