@@ -31,14 +31,17 @@
   - tomcat 8.0
   - Redis
   - Maven
- ####硬件环境(最小配置)：
-   - CPU：1核
-   - 内存：1G
+ #### 硬件环境(最小配置)：
+
+  - CPU：1核
+  - 内存：1G
+
  #### 说明
  - seckill-core：秒杀核心模块，部署tomcat启动
  - seckill-api：秒杀api模块
  - seckill-base：秒杀工具类模块
  - seckill-web：秒杀页面模块
+
  #### 步骤
  1. 创建数据库，导入初始化脚本initDB.sql
  2. 修改系统数据库连接seckill-core/src/main/resources/jdbc.properties
