@@ -2,8 +2,8 @@ package com.imooc.aop;
 
 
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +25,7 @@ public class LogAOP {
     public void aopMethod() {
     }
 
-    @Around("aopMethod()")
+    @Before("aopMethod()")
     public Object around(ProceedingJoinPoint joinPoint) throws Throwable {
         String classType = joinPoint.getTarget().getClass().getName();
         //运用反射的原理创建对象
