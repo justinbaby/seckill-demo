@@ -91,7 +91,8 @@ public class Exposer {
 	public void setEnd(long end) {
 		this.end = end;
 	}
-
+		
+	//重写toString方法
 	@Override
 	public String toString() {
 		return "Exposer [exposed=" + exposed + ", md5=" + md5 + ", seckillId=" + seckillId + ", now=" + now + ", start="
