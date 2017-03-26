@@ -14,7 +14,7 @@
  - CDN: 内容分发服务器
  - Procedure:数据库存储过程
  - Protostuff:Google开发的基于Java语言的序列化库
-
+ - zookeeper:分布式应用程序协调服务 //TODO
 ## Reference
 
 详细开发教程可以参考[codingXiaxw前辈的开发文档](https://github.com/codingXiaxw/seckill),简直就是手把手教你做开发啊!!!
