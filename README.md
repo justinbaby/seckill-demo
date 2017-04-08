@@ -49,7 +49,7 @@
  2. 修改系统数据库连接seckill-core/src/main/resources/jdbc.properties
  3. Tomcat运行
 
-##FAQ
+## FAQ
 - Q:为什么我的maven下载依赖jar包这么慢
 - A:可以自己下载maven,使用自己的Maven,修改maven安装目录下的/conf/settings.xml,在IDEA或eclipse里配置为默认的设置
 ```XML
