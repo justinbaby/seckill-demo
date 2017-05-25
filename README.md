@@ -1,5 +1,5 @@
 # seckill（Java高并发秒杀API）
-
+一个spring入门项目,后续将更新spring中级项目 :)
 #### 所用技术点
  - spring
  - springMVC: MVC框架
