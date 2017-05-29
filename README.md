@@ -19,7 +19,7 @@
 
 ## Reference
 
-详细开发教程可以参考[codingXiaxw前辈的开发文档](https://github.com/codingXiaxw/seckill),简直就是手把手教你做开发啊!!!
+详细开发教程可以参考[codingXiaxw的开发文档](https://github.com/codingXiaxw/seckill),简直就是手把手教你做开发啊!!!
 
 ## Java高并发秒杀系统API
 
