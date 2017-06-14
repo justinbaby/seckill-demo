@@ -1,5 +1,5 @@
 # seckill（Java高并发秒杀API）
-
+一个spring入门项目,后续将更新spring中级项目 :)
 #### 所用技术点
  - spring
  - springMVC: MVC框架
@@ -14,10 +14,12 @@
  - CDN: 内容分发服务器
  - Procedure:数据库存储过程
  - Protostuff:Google开发的基于Java语言的序列化库
+ - ZooKeeper:分布式应用程序协调服务 //TODO
+ - DUBBO:分布式应用服务框架 //TODO
 
 ## Reference
 
-详细开发教程可以参考[codingXiaxw前辈的开发文档](https://github.com/codingXiaxw/seckill),简直就是手把手教你做开发啊!!!
+详细开发教程可以参考[codingXiaxw的开发文档](https://github.com/codingXiaxw/seckill),简直就是手把手教你做开发啊!!!
 
 ## Java高并发秒杀系统API
 
@@ -49,7 +51,7 @@
  2. 修改系统数据库连接seckill-core/src/main/resources/jdbc.properties
  3. Tomcat运行
 
-##FAQ
+## FAQ
 - Q:为什么我的maven下载依赖jar包这么慢
 - A:可以自己下载maven,使用自己的Maven,修改maven安装目录下的/conf/settings.xml,在IDEA或eclipse里配置为默认的设置
 ```XML
