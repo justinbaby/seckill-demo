@@ -13,7 +13,7 @@
 	<name>seckill Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
-		<!-- 单元测试 -->
+		<!-- 单元测试 	//test master add something -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
