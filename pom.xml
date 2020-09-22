@@ -12,6 +12,8 @@
 	</modules>
 	<name>seckill Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+
+	<!-- 下面是dependencies -->
 	<dependencies>
 		<!-- 单元测试 -->
 		<dependency>
