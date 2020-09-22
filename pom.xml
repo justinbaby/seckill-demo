@@ -15,7 +15,7 @@
 
 	<!-- 下面是dependencies -->
 	<dependencies>
-		<!-- 单元测试 -->
+		<!-- 单元测试  junit-->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
