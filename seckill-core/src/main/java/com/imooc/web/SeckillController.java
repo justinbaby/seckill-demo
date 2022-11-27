@@ -7,7 +7,7 @@ import com.imooc.dto.SeckillResult;
 import com.imooc.entity.Seckill;
 import com.imooc.enums.SeckillStateEnum;
 import com.imooc.exception.RepeatKillException;
-import com.imooc.service.SeckillService;
+import com.imooc.client.SeckillService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

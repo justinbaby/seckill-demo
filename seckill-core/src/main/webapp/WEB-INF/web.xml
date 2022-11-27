@@ -13,7 +13,7 @@
 		 -->
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:spring/spring-*.xml</param-value>
+			<param-value>classpath:spring/coreApplicationContext.xml</param-value>
 		</init-param>
 	</servlet>
 	<servlet-mapping>

@@ -1,0 +1,4 @@
+dubbo.application.name=seckill-service
+dubbo.registry.address=zookeeper://127.0.0.1:2181
+dubbo.registry.check=false
+dubbo.protocol.name=dubbo
