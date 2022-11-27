@@ -3,17 +3,19 @@ package com.imooc.dto;
 import com.imooc.entity.SuccessKilled;
 import com.imooc.enums.SeckillStateEnum;
 
+import java.io.Serializable;
+
 /**
  * 封装秒杀执行后结果
  * 
  * @author yan
  */
-public class SeckillExecution {
+public class SeckillExecution implements Serializable {
 
-	private long seckillId;
+	private Long seckillId;
 
 	// 秒杀执行结果状态
-	private int state;
+	private Integer state;
 
 	// 状态标识
 	private String stateInfo;
@@ -21,32 +23,34 @@ public class SeckillExecution {
 	// 秒杀成功对象
 	private SuccessKilled successKilled;
 
-	public SeckillExecution(long seckillId, SeckillStateEnum stateEnum, SuccessKilled successKilled) {
+	public SeckillExecution(Long seckillId, SeckillStateEnum stateEnum, SuccessKilled successKilled) {
 		this.seckillId = seckillId;
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();
 		this.successKilled = successKilled;
 	}
 
-	public SeckillExecution(long seckillId, SeckillStateEnum stateEnum) {
+	public SeckillExecution(Long seckillId, SeckillStateEnum stateEnum) {
 		this.seckillId = seckillId;
-		this.state = stateEnum.getState();
-		this.stateInfo = stateEnum.getStateInfo();
+		if(stateEnum!=null){
+			this.state = stateEnum.getState();
+			this.stateInfo = stateEnum.getStateInfo();
+		}
 	}
 
-	public long getSeckillId() {
+	public Long getSeckillId() {
 		return seckillId;
 	}
 
-	public void setSeckillId(long seckillId) {
+	public void setSeckillId(Long seckillId) {
 		this.seckillId = seckillId;
 	}
 
-	public int getState() {
+	public Integer getState() {
 		return state;
 	}
 
-	public void setState(int state) {
+	public void setState(Integer state) {
 		this.state = state;
 	}
 

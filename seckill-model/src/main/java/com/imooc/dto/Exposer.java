@@ -1,11 +1,13 @@
 package com.imooc.dto;
 
+import java.io.Serializable;
+
 /**
  * 暴露秒杀接口DTO
  * 
  * @author yan
  */
-public class Exposer {
+public class Exposer implements Serializable {
 
 	// 是否开启秒杀
 	private boolean exposed;

@@ -15,7 +15,7 @@ public enum SeckillStateEnum {
 
     DATA_REWRITE(-3, "数据篡改");
 
-    private int state;
+    private Integer state;
 
     private String stateInfo;
 
@@ -24,7 +24,7 @@ public enum SeckillStateEnum {
         this.stateInfo = stateInfo;
     }
 
-    public int getState() {
+    public Integer getState() {
         return state;
     }
 
@@ -32,9 +32,9 @@ public enum SeckillStateEnum {
         return stateInfo;
     }
 
-    public static SeckillStateEnum stateOf(int index) {
+    public static SeckillStateEnum stateOf(Integer index) {
         for (SeckillStateEnum state : values()) {
-            if (state.getState() == index) {
+            if (state.getState().equals(index)) {
                 return state;
             }
         }
