@@ -7,7 +7,7 @@
     http://code.alibabatech.com/schema/dubbo
     http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:service interface="com.imooc.client.SeckillService" ref="bookService"  timeout="10000"/>
+    <dubbo:service interface="com.imooc.client.SeckillService" ref="seckillService"  timeout="10000"/>
     <!-- 和本地bean一样实现服务 -->
-    <bean id="bookService" class="com.imooc.service.impl.SeckillServiceImpl" />
+    <bean id="seckillService" class="com.imooc.service.impl.SeckillServiceImpl" />
 </beans>
