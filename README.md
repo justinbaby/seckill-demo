@@ -14,8 +14,8 @@
  - CDN: 内容分发服务器
  - Procedure:数据库存储过程
  - Protostuff:Google开发的基于Java语言的序列化库
- - ZooKeeper:分布式应用程序协调服务 //TODO
- - DUBBO:分布式应用服务框架 //TODO
+ - ZooKeeper:分布式应用程序协调服务 
+ - DUBBO:分布式应用服务框架 
 
 ## Reference
 
@@ -31,7 +31,7 @@
 
   - IDEA
   - MySQL
-  - JDK1.6或以上
+  - JDK1.8或以上
   - tomcat 8.0
   - Redis
   - Maven
