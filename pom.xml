@@ -4,7 +4,7 @@
     <groupId>com.imooc</groupId>
     <artifactId>seckill</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT </version>
     <modules>
         <module>seckill-core</module>
         <module>seckill-model</module>
