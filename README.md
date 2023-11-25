@@ -17,10 +17,6 @@
  - ZooKeeper:分布式应用程序协调服务 
  - DUBBO:分布式应用服务框架 
 
-## Reference
-
-详细开发教程可以参考[codingXiaxw的开发文档](https://github.com/codingXiaxw/seckill),简直就是手把手教你做开发啊!!!
-
 ## Java高并发秒杀系统API
 
 本项目参考慕课网视频(版权方),并在此基础上进行了模块划分,功能添加,欢迎去官网观看!!!!
